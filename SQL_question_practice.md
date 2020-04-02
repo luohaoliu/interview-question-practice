@@ -75,4 +75,15 @@ SELECT DISTINCT Country FROM Customers;
 SELECT COUNT(DISTINCT Country) FROM Customers;
 
 SQL WHERE Clause
-  
+
+The WHERE clause is used to filter records. The WHERE clause is used to extract only those records that fulfill a specified condition.
+
+SELECT * FROM Customers WHERE Country="Mexico";
+
+SELECT * FROM Customers WHERE CustomerID=1;
+
+The SQL AND, OR and NOT Operators
+
+The WHERE clause can be combined with AND, OR, and NOT operators.
+
+The AND and OR operators are used to filter records based on more than one condition. The AND operator displays a record if all the conditions separated by AND are TRUE. The OR operator displays a record if any of the conditions separated by OR is TRUE. The NOT operator displays a record if the condition(s) is NOT TRUE.
