@@ -11,3 +11,7 @@ RDBMS stands for Relational Database Management System. RDBMS is the basis of SQ
 Every table is broken up into smaller entities called fields. A field is a column in a table that is designed to maintain specific information about every record in the table. A record, also called a row, is each individual entry that exists in a table. A record is a horizontal entry in a table. 
 
 A column is a vertical entity in a table that contains all information associated with a specific field in a table.
+
+SQL Syntax
+
+A database most often contains one or more tables. Each table is identified by a name. Table contain records (i.e. rows) with data.
