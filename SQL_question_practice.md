@@ -14,4 +14,4 @@ A column is a vertical entity in a table that contains all information associate
 
 SQL Syntax
 
-A database most often contains one or more tables. Each table is identified by a name. Table contain records (i.e. rows) with data.
+A database most often contains one or more tables. Each table is identified by a name. Table contain records (rows) with data.
