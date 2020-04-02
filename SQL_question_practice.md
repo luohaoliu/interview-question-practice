@@ -41,3 +41,29 @@ DROP TABLE - deletes a table
 CREATE INDEX - creates an index (search key)
 
 DROP INDEX - deletes an index
+
+The SQL SELECT Statement
+
+SELECT Syntax
+
+SELECT column1, column2, ...
+FROM table_name;
+
+SELECT Column Example
+
+SELECT CustomerName, City FROM Customer;
+
+SELECT * Example
+
+SELECT * FROM Customers;
+
+The SQL SELECT DISTINCT Statement
+
+The SELECT DISTINCT statement is used to return only distinct (different) values.
+
+Inside a table, a column often contains many duplicate values; and sometimes you only want to list the different (distinct) values.
+
+SELECT DISTINCT Syntax
+
+SELECT DISTINCT column1, column2, ...
+FROM table_name;
