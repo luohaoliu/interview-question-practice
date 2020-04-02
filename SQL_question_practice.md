@@ -47,6 +47,7 @@ The SQL SELECT Statement
 SELECT Syntax
 
 SELECT column1, column2, ...
+
 FROM table_name;
 
 SELECT Column Example
@@ -66,4 +67,5 @@ Inside a table, a column often contains many duplicate values; and sometimes you
 SELECT DISTINCT Syntax
 
 SELECT DISTINCT column1, column2, ...
+
 FROM table_name;
