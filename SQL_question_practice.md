@@ -5,3 +5,5 @@ RDBMS stands for Relational Database Management System. RDBMS is the basis of SQ
 SQL HOME
 
 SELECT * FROM Customers;
+
+SQL Intro
