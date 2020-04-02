@@ -71,3 +71,8 @@ SELECT DISTINCT column1, column2, ...
 FROM table_name;
 
 SELECT DISTINCT Country FROM Customers;
+
+SELECT COUNT(DISTINCT Country) FROM Customers;
+
+SQL WHERE Clause
+  
