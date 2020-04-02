@@ -69,3 +69,5 @@ SELECT DISTINCT Syntax
 SELECT DISTINCT column1, column2, ...
 
 FROM table_name;
+
+SELECT DISTINCT Country FROM Customers;
