@@ -46,9 +46,7 @@ The SQL SELECT Statement
 
 SELECT Syntax
 
-SELECT column1, column2, ...
-
-FROM table_name;
+SELECT column1, column2, ... FROM table_name;
 
 SELECT Column Example
 
@@ -66,9 +64,7 @@ Inside a table, a column often contains many duplicate values; and sometimes you
 
 SELECT DISTINCT Syntax
 
-SELECT DISTINCT column1, column2, ...
-
-FROM table_name;
+SELECT DISTINCT column1, column2, ... FROM table_name;
 
 SELECT DISTINCT Country FROM Customers;
 
@@ -88,27 +84,15 @@ The WHERE clause can be combined with AND, OR, and NOT operators.
 
 The AND and OR operators are used to filter records based on more than one condition. The AND operator displays a record if all the conditions separated by AND are TRUE. The OR operator displays a record if any of the conditions separated by OR is TRUE. The NOT operator displays a record if the condition(s) is NOT TRUE.
 
-SELECT column1, column2, ...
-
-FROM table_name 
-
-WHERE condition1 AND condition2 AND condition3 ...;
+SELECT column1, column2, ... FROM table_name WHERE condition1 AND condition2 AND condition3 ...;
 
 OR Syntax
 
-SELECT column1, column2, ...
-
-FROM table_name
-
-WHERE condition1 OR condition2 OR condition3 ...;
+SELECT column1, column2, ... FROM table_name WHERE condition1 OR condition2 OR condition3 ...;
 
 NOT Syntax
 
-SELECT column1, column2, ...
-
-FROM table_name
-
-WHERE NOT condition;
+SELECT column1, column2, ... FROM table_name WHERE NOT condition;
 
 SELECT * FROM Customers WHERE City='Berlin' OR City='Lyon';
 
@@ -119,11 +103,7 @@ The ORDER BY keyword sorts the records in ascending order by default. To sort th
 
 ORDER BY Syntax
 
-SELECT column1, column2, ...
-
-FROM table_name
-
-Order BY column1, column2, ... ASC|DESC;
+SELECT column1, column2, ... FROM table_name Order BY column1, column2, ... ASC|DESC;
 
 SELECT * FROM Customers ORDER BY Country DESC;
 
@@ -139,15 +119,11 @@ It is possible to write the INSERT INTO statement in two ways.
 
 The first way specifies both the column names and the values to be inserted:
 
-INSERT INTO table_name (column1, column2, column3, ...)
-
-VALUES (value1, value2, value3, ...);
+INSERT INTO table_name(column1, column2, column3, ...) VALUES(value1, value2, value3, ...);
 
 If you are adding values for all the columns of the table, you do not need to specify the column names in the SQL query. However, make sure the order of the values is in the same order as the columns in the table. The INSERT INTO syntax would be as follows:
 
-INSERT INTO table_name
-
-VALUES (values1, value2, value3, ...);
+INSERT INTO table_name VALUES(values1, value2, value3, ...);
 
 It is also possible to only insert data in specific columns.
 
