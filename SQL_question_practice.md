@@ -190,3 +190,33 @@ SELECT column_name(s) FROM table_name WHERE condition LIMIT number;
 Oracle Syntax:
 
 SELECT column_name(s) FROM table_name WHERE ROWNUM <= number;
+
+The following SQL statement selects the first three records from the "Customers" table (for SQL Server/MS Access):
+
+SELECT TOP 3 * FROM Customers;
+
+The following SQL statement shows the equivalent example using the LIMIT clause (for MySQL):
+
+SELECT * FROM Customers LIMIT 3;
+
+The following SQL statement shows the equivalent example using ROWNUM (for Oracle):
+
+SELECT * FROM Customers WHERE ROWNUM <= 3;
+
+SQL TOP PERCENT Example
+
+The following SQL statement slects the first 50% of the records from the "Customers" table (for SQL Server/MS Access):
+
+SELECT TOP 50 PERCENT * FROM Customers;
+
+ADD a WHERE CLAUSE
+
+The following SQL statement selects the first three records from the "Customers" table (for SQL Server/MS Access):
+
+SELECT TOP 3 * FROM Customers;
+
+The SQL MIN() and MAX() Functions
+
+The MIN() function returns the smallest value of the selected column. 
+
+The MAX() function returns the largest value of the selected column.
