@@ -163,3 +163,10 @@ UPDATE Syntax
 
 UPDATE table_name SET column1 = calue1, column2 = value2, ... WHERE condition;
 
+The SQL DELETE Statement
+
+The DELETE statement is used to delete existing records in a table.
+
+DELETE Syntax
+
+DELETE FROM table_name WHERE condition;
