@@ -87,3 +87,48 @@ The SQL AND, OR and NOT Operators
 The WHERE clause can be combined with AND, OR, and NOT operators.
 
 The AND and OR operators are used to filter records based on more than one condition. The AND operator displays a record if all the conditions separated by AND are TRUE. The OR operator displays a record if any of the conditions separated by OR is TRUE. The NOT operator displays a record if the condition(s) is NOT TRUE.
+
+SELECT column1, column2, ...
+
+FROM table_name 
+
+WHERE condition1 AND condition2 AND condition3 ...;
+
+OR Syntax
+
+SELECT column1, column2, ...
+
+FROM table_name
+
+WHERE condition1 OR condition2 OR condition3 ...;
+
+NOT Syntax
+
+SELECT column1, column2, ...
+
+FROM table_name
+
+WHERE NOT condition;
+
+SELECT * FROM Customers WHERE City='Berlin' OR City='Lyon';
+
+The SQL ORDER BY keyword
+
+The ORDER BY Keyword is used to sort the result-set in ascending or descending order.
+The ORDER BY keyword sorts the records in ascending order by default. To sort the records in descending order, use the DESC keyword.
+
+ORDER BY Syntax
+
+SELECT column1, column2, ...
+
+FROM table_name
+
+Order BY column1, column2, ... ASC|DESC;
+
+SELECT * FROM Customers ORDER BY Country DESC;
+
+SELECT * FROM Customers ORDER BY Country, CustomerName;
+
+SELECT * FROM Customers ORDER BY Country ASC, CustomerName DESC;
+
+
