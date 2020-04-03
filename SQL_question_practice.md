@@ -170,3 +170,23 @@ The DELETE statement is used to delete existing records in a table.
 DELETE Syntax
 
 DELETE FROM table_name WHERE condition;
+
+SQL TOP, LIMIT or ROWNUM Clause
+
+The SQL SELECT TOP Clause
+
+The SELECT TOP clause is used to specify the number of records to return.
+
+The SELECT TOP clause is useful on large tables with thousands of records. Returning a large number of records can impact performance. 
+
+SQL Server / MS Access Syntax:
+
+SELECT TOP number|percent column_name(s) FROM table_name WHERE condition;
+
+MySQL Syntax:
+
+SELECT column_name(s) FROM table_name WHERE condition LIMIT number;
+
+Oracle Syntax:
+
+SELECT column_name(s) FROM table_name WHERE ROWNUM <= number;
