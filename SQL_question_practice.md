@@ -265,4 +265,13 @@ The SQL LIKE Operator
 
 The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.
 
+There are two wildcards often used in conjunction with the LIKE operator:
+
+% - the percent sign represents zero, one, or multiple characters
+_ - the underscore represents a single character
+
+LIKE Syntax
+
+SELECT column1, column2, ... FROM table_name WHERE columnN like pattern;
+
 
