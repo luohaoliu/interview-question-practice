@@ -228,3 +228,37 @@ SELECT MAX(column_name) FROM table_name WHERE condition;
 SELECT MIN(Price) AS SmallestPrice FROM Products;
 
 SELECT MAX(Price) AS LargestPrice FROM Products;
+
+The SQL COUNT(), AVG() and SUM() Functions
+
+The COUNT() function returns the number of rows that matches a specified criteria. Null values are not counted.
+
+The AVG() function returns the average value of a numeric column.
+
+The SUM() function returns the total sum of a numeric column.
+
+COUNT() Syntax
+
+SELECT COUNT(column_name) FROM table_name WHERE condition;
+
+AVG() Syntax
+
+SELECT AVG(column_name) FROM table_name WHERE condition;
+
+SUM() Syntax
+
+SELECT SUM(column_name) FROM table_name WHERE condition;
+
+COUNT() Example
+
+SELECT COUNT(ProductID) FROM Products;
+
+AVG() Example
+
+SELECT AVG(Price) FROM Products;
+
+SUM() Example
+
+SELECT SUM(Quantity) FROM OrderDetails;
+
+
