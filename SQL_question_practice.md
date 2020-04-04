@@ -274,4 +274,8 @@ LIKE Syntax
 
 SELECT column1, column2, ... FROM table_name WHERE columnN like pattern;
 
+SQL LIKE Examples
 
+SELECT * FROM Customers WHERE CustomerName LIKE 'a%';
+
+SELECT * FROM Customers WHERE CustomerName LIKE '%a';
