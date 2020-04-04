@@ -261,4 +261,8 @@ SUM() Example
 
 SELECT SUM(Quantity) FROM OrderDetails;
 
+The SQL LIKE Operator
+
+The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.
+
 
