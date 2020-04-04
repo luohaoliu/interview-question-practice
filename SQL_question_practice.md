@@ -287,3 +287,5 @@ SELECT * FROM Customers WHERE CustomerName LIKE 'a__%';
 SELECT * FROM Customers WHERE ContactName LIKE 'a%o';
 
 SELECT * FROM Customers WHERE CustomerName NOT LIKE 'a%';
+
+SQL Wildcard Characters
