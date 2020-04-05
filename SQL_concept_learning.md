@@ -305,3 +305,7 @@ IN Syntax
 SELECT column_name(s) FROM table_name WHERE column_name IN (value1, value2, ...);
 
 SELECT column_name(s) FROM table_name WHERE column_name IN (SELECT STATEMENT);
+
+The following SQL statement selects all customers that are from the same countries as the suppliers:
+
+SELECT * FROM Customers WHERE Country IN (SELECT Country FROM Suppliers); 
