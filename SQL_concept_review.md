@@ -373,3 +373,8 @@ Alias for Columns Examples
 The following SQL statement creates two aliases, one for the CustomerID column and one for the CustomerName column:
 
 SELECT CustomerID AS ID, CustomerName AS Customer FROM Customers;
+
+The following SQL statement creates two aliases, one for the CustomerName column and one for the ContactName column. It requires double quotation marks or square brackets if the alias name contains spaces.
+
+SELECT CustomerName AS Customer, ContactName AS "Contact Person" FROM Customers; 
+
