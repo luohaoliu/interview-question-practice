@@ -378,3 +378,7 @@ The following SQL statement creates two aliases, one for the CustomerName column
 
 SELECT CustomerName AS Customer, ContactName AS "Contact Person" FROM Customers; 
 
+The following SQL statement creates an alias named "Address" that combines four columns(Address, PostalCode, City and Country):
+
+SELECT CustomerName, Address + ', ' + PostalCode + ' ' + City + ', ' + Country AS Address FROM Customers;
+
