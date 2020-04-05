@@ -357,3 +357,13 @@ The following SQL statement selects all orders with an OrderDate BETWEEN '01-Jul
 SELECT * FROM Orders WHERE OrderDate BETWEEN #01/07/1996# AND #31/07/1996#;
 
 SELECT * FROM Orders WHERE OrderDate BETWEEN '1996-07-01' AND '1996-07-31';
+
+SQL Aliases
+
+SQL aliases are used to give a table, or a column in a table, a temporary name. 
+
+Aliases are often used to make column names more readable.
+
+An alias only exists for the duration of the query.
+
+SELECT column_name AS alias_name FROM table_name;
