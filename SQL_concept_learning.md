@@ -309,3 +309,11 @@ SELECT column_name(s) FROM table_name WHERE column_name IN (SELECT STATEMENT);
 The following SQL statement selects all customers that are from the same countries as the suppliers:
 
 SELECT * FROM Customers WHERE Country IN (SELECT Country FROM Suppliers); 
+
+The SQL BETWEEN Operator
+
+The BETWEEN operator selects values within a given range. The values can be numbers, text, or dates.
+
+The BETWEEN operator is inclusive: begin and end values are included.
+
+
