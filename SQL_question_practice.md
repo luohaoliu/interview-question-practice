@@ -289,3 +289,7 @@ SELECT * FROM Customers WHERE ContactName LIKE 'a%o';
 SELECT * FROM Customers WHERE CustomerName NOT LIKE 'a%';
 
 SQL Wildcard Characters
+
+A wildcard character is used to substitute one or more characters in a string.
+
+Whildcard characters are used with the SQL LIKE operator. The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.
