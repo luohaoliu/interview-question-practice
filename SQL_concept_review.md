@@ -367,3 +367,9 @@ Aliases are often used to make column names more readable.
 An alias only exists for the duration of the query.
 
 SELECT column_name AS alias_name FROM table_name;
+
+Alias for Columns Examples
+
+The following SQL statement creates two aliases, one for the CustomerID column and one for the CustomerName column:
+
+SELECT CustomerID AS ID, CustomerName AS Customer FROM Customers;
