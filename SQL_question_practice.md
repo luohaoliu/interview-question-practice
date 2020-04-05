@@ -293,3 +293,9 @@ SQL Wildcard Characters
 A wildcard character is used to substitute one or more characters in a string.
 
 Whildcard characters are used with the SQL LIKE operator. The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.
+
+The SQL IN Operator
+
+The IN operator allows you to specify multiple values in a WHERE clause.
+
+The IN operator is a shorthand for multiple OR conditions.
