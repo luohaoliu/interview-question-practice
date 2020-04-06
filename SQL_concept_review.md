@@ -409,3 +409,20 @@ LEFT (OUTER) JOIN returns all records from the left table, and the matched recor
 RIGHT (OUTER) JOIN returns all records from the right table, and the matched records from the left table.
 
 FULL (OUTER) JOIN returns all records when there is a match in either left or right table.
+
+SQL INNER JOIN Keyword
+
+The INNER JOIN keyword selects records that have matching values in both tables.
+
+INNER JOIN
+
+SELECT column_name(s) FROM table1 INNER JOIN table2 ON table1.column_name = table2.column_name;
+
+SQL INNER JOIN Example
+
+The following SQL statement selects all orders with customer information:
+
+SELECT Orders.OrderID, Customers.CustomerName FROM Orders INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
+
+
+
