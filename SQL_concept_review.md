@@ -504,4 +504,10 @@ The following SQL statement returns the cities (duplicate values also) from both
 
 SELECT City FROM Customers UNION ALL SELECT City FROM Suppliers ORDER BY City;
 
+Another UNION Example
+
+The following SQL statement lists all customers and suppliers.
+
+SELECT 'Customer' As Type, ContactName, City, Country FROM Customers UNION SELECT 'Supplier', ContactName, City, Country FROM Suppliers;
+
 
