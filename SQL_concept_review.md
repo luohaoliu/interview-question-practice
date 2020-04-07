@@ -460,3 +460,21 @@ SELECT column_name(s) FROM table1 FULL OUTER JOIN table2 ON table1.column_name =
 
 SELECT Customers.CustomerName, Orders.OrderID FROM Customers FULL OUTER JOIN Orders ON Customers.CustomerID = Orders.CustomerID ORDER BY Customers.CustomerName;
 
+SQL Self JOIN
+
+A self JOIN is a regular join, but the table is joined with itself.
+
+Self JOIN Syntax
+
+SELECT column_name(s) FROM table1 T1, table1 T2 WHERE condition;
+
+SQL Self JOIN Example
+
+The following SQL statement matches customers that are from the same city:
+
+SELECT A.CustomerName AS CustomerName1, B.CustomerName AS CustomerName2, A.City FROM Customers A, Customers B WHERE A.CustomerID <> B.CustomerID AND A.City = B.City ORDER BY A.City;
+
+SQL UNION Operator
+
+The UNION operator is used to combine the result-set of two or more SELECT statements. Each SELECT statement within UNION must have the same number of columns. The columns must also have similar data types. The columns in each SELECT statement must also be in the same order.
+
