@@ -534,5 +534,12 @@ The following SQL statement lists the number of orders sent by each shipper:
 
 SELECT Shippers.ShipperName, COUNT(Orders.OrderID) AS NumberOfOrders FROM Orders LEFT JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID GROUP BY ShipperName;
 
+The SQL HAVING Clause
+
+The HAVING clause was added to SQL because the WHERE keyword could not be used with aggregate functions.
+
+HAVING Syntax
+
+SELECT column_name(s) FROM table_name WHERE condition GROUP BY column_name(s) HAVING condition ORDER BY column_name(s);
 
 
