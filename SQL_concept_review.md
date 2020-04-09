@@ -576,3 +576,7 @@ The following SQL statement returns TRUE and lists the suppliers with a product 
 
 SELECT SupplierName FROM Suppliers WHERE EXISTS (SELECT ProductName FROM Products WHERE Products.SupplierID = Suppliers.supplierID AND Price < 20);
 
+The following SQL statement returns TRUE and lists the suppliers with a product price equal to 22:
+
+SELECT SupplierName FROM Suppliers WHERE EXISTS (SELECT ProductName FROM Products WHERE Products.SupplierID = Suppliers.supplierID AND Price = 22);
+
