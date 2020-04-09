@@ -561,3 +561,10 @@ SELECT Employees.LastName, COUNT(Orders.OrderID) AS NumberOfOrders FROM (Orders 
 The following SQL statement lists if the employees "Davolio" or "Fuller" have registered more than 25 orders:
 
 SELECT Employees.LastName, COUNT(Orders.OrderID) AS NumberOfOrders FROM Orders INNER JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID WHERE LastName = 'Davolio' OR LastName = 'Fuller' GROUP BY LastName HAVING COUNT (Orders.OrderID) > 25;
+
+The SQL EXISTS Operator
+
+The EXISTS operator is used to test for the existence of any record in a subquery.
+
+The EXISTS operator returns true if the subquery returns one or more records.
+
