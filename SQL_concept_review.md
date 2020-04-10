@@ -608,3 +608,10 @@ The following SQL statement returns TRUE and lists the product names if it finds
 
 SELECT ProductName FROM Products WHERE ProductID = ANY (SELECT ProductID FROM OrderDetails WHERE Quantity > 99);
 
+SQL ALL Example
+
+The ALL operator returns TRUE if all of the subquery values meet the condition.
+
+The following SQL statement returns TRUE and lists the product names if ALL the records in the OrderDetails table has quantity = 10 (this example will return FALSE, because not ALL records in the OrderDetails has quantity = 10):
+
+SELECT ProductName FROM Products WHERE ProductID = ALL (SELECT ProductID FROM OrderDetails WHERE Quantity = 10);
