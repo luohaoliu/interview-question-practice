@@ -615,3 +615,23 @@ The ALL operator returns TRUE if all of the subquery values meet the condition.
 The following SQL statement returns TRUE and lists the product names if ALL the records in the OrderDetails table has quantity = 10 (this example will return FALSE, because not ALL records in the OrderDetails has quantity = 10):
 
 SELECT ProductName FROM Products WHERE ProductID = ALL (SELECT ProductID FROM OrderDetails WHERE Quantity = 10);
+
+The SQL SELECT INTO Statement
+
+The SELECT INTO statement copies data from one table into a new table.
+
+SQL SELECT INTO Examples
+
+SELECT * INTO CustomersBackup2017 FROM Customers;
+
+The following SQL statement uses the IN clause to copy the table into a new table in another database.
+
+SELECT * INTO CustomersBackup2017 IN 'Backup.mdb' FROM Customers;
+
+The following SQL statement copies only a few columns into a new table.
+
+SELECT CustomerName, ContactName INTO CustomersBackup2017 FROM Customers;
+
+The following SQL statement copies data from more than one table into a new table.
+
+SELECT Customers.CustomerName, Orders.OrderID INTO CustomersOrderBackup2017 FROM Customers LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID;
