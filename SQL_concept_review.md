@@ -635,3 +635,7 @@ SELECT CustomerName, ContactName INTO CustomersBackup2017 FROM Customers;
 The following SQL statement copies data from more than one table into a new table.
 
 SELECT Customers.CustomerName, Orders.OrderID INTO CustomersOrderBackup2017 FROM Customers LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID;
+
+The SQL INSERT INTO SELECT Statement
+
+The INSERT INTO SELECT statement copies data from one table and inserts it into another table. INSERT INTO SELECT requires that data types in source and target tables match. The existing records in the target table are unaffected.
