@@ -649,3 +649,9 @@ INSERT INTO Customers (CustomerName, City, Country) SELECT SupplierName, City, C
 The following SQL statement copies "Suppliers" into "Customers" (fill all columns):
 
 INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country) SELECT SupplierName, ContactName, Address, City, PostalCode, Country FROM Suppliers;
+
+The SQL CASE Statement
+
+The CASE statement goes through conditions and returns a value when the first condition is met. Once a condition is true, it will stop reading and return the result. If no conditions are true, it returns the value in the ELSE clause. If there is no ELSE part and no conditions are true, it returns NULL.
+
+
